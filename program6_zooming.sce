@@ -1,4 +1,11 @@
-img=imread("C:\Users\Om Goel\Desktop\scilab\pic.jpg");
+//img=imread("C:\Users\Om Goel\Downloads\pic.jpg");  //compress image
+
+img=imread("C:\Users\Om Goel\Downloads\pic (1).jpg");
+
+im= rgb2gray(img);
+
+
+
 Size=size(img);
 arr1=[];
 arr2=[];
@@ -13,6 +20,8 @@ for y=1:Size(1,2)
     arr2=[arr2,arr1(:,y)];
   end
 end
-
+figure()
+imshow(im);
+figure()
 imshow(arr2);
 
